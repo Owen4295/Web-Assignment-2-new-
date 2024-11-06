@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/about">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Me Here</h2>
+        <form action="/send-message" method="POST">
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name Here" size="32" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email Address Here" size="48" required>
+            </p>
+            <p>
+                <label for="comments">Comments:</label>
+                <br><br>
+                <textarea name="comments" id="comments" placeholder="Enter Your Comments Here" cols="50" rows="10" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Click to submit the form"/>
+                <input type="reset" value="Click to reset the form"/>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact me at: <a href="mailto:owen.pacheco1@ontariotechu.net">owen.pacheco1@ontariotechu.net</a></p>
+        <p>&copy; 2024 by <b>Owen Pacheco</b></p>
+    </footer>
+    <script src="/js/contact.js"></script>
+</body>
+</html>
